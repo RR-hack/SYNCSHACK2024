@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft</title>
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("Raleway/static/Raleway-Light.ttf") format("truetype")
+        }
+        .logo {
+            padding-left: 10px;
+        }
+        body {
+            font-family: "Raleway", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left-column, .right-column {
+            width: 20%;
+            padding-right: 15px;
+        }
+        .middle-column {
+            width: 55%;
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #6a0dad;
+            text-align: center;
+            width: 100%;
+        }
+        .share-heading {
+            font-size: 36px;
+            color: #6a0dad;
+            margin-bottom: 30px;
+            text-align: center;
+            width: 100%;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        .event-box {
+            position: relative;
+            background-color: #d8bdfc;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(152, 113, 169, 0.462);
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .event-box .event-details {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .event-box h3 {
+            margin: 0 0 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(152, 113, 169, 0.462);
+        }
+        .event-box p {
+            margin: 0;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(152, 113, 169, 0.462);
+        }
+        .event-box:hover{
+            filter: brightness(0.5);
+        }
+        .feed-post {
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-height: 200px;
+        }
+        .feed-post:hover {
+            background-color: lightgray;
+        }
+        .feed-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .feed-post .username {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .feed-post .username img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+        }
+        .circle:hover{
+            filter: brightness(0.5);
+            
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 18px;
+        }
+        .header .logo {
+            height: 70px; /* Adjust height as necessary */
+
+        }
+        .header .auth-buttons a {
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .header .auth-buttons .login {
+            background-color: transparent;
+            color: #6a0dad;
+            border: 1px solid #6a0dad;
+        }
+        .header .auth-buttons .signup {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Craft Logo" class="logo">
+        <nav>
+            <a href="craft.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="circles.html">Circles</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <div class="share-heading">Share Your Craft</div>
+    <div class="container">
+        <!-- Left Column: Upcoming Events -->
+        <div class="left-column column">
+            <div class="heading">Upcoming Events</div>
+            <div class="event-box" style="background-image: url('beach-cleanup.jpg');">
+                <div class="event-details">
+                    <h3>Beach Cleanup</h3>
+                    <p>Date: September 7, 2024</p>
+                    <p>Location: Maroubra Beach, NSW</p>
+                </div>
+            </div>
+            <div class="event-box" style="background-image: url('coding-workshop.jpg');">
+                <div class="event-details">
+                    <h3>Coding Workshop</h3>
+                    <p>Date: September 14, 2024</p>
+                    <p>Location: Bondi Junction, NSW</p>
+                </div>
+            </div>
+            <div class="event-box" style="background-image: url('yoga-retreat.jpg');">
+                <div class="event-details">
+                    <h3>Yoga Retreat</h3>
+                    <p>Date: September 21, 2024</p>
+                    <p>Location: Blue Mountains, NSW</p>
+                </div>
+            </div>
+            <div class="event-box" style="background-image: url('startup-pitch.jpg');">
+                <div class="event-details">
+                    <h3>Startup Pitch Night</h3>
+                    <p>Date: September 28, 2024</p>
+                    <p>Location: Sydney CBD, NSW</p>
+                </div>
+            </div>
+            <div class="event-box" style="background-image: url('charity-run.jpg');">
+                <div class="event-details">
+                    <h3>Charity Fun Run</h3>
+                    <p>Date: October 5, 2024</p>
+                    <p>Location: Centennial Park, NSW</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Middle Column: Feed -->
+        <div class="middle-column column">
+            <div class="heading">Feed</div>
+
+            <div class="feed-post">
+                <img src="SwimmingEvent.jpg" alt="Swimming Event" class="feed-image">
+                <div class="username">
+                    <img src="Pool.jpg" alt="Swimming Circle Profile" class="circle">
+                    <p>Software Engineers Swimming Circle</p>
+                </div>
+                <p>Today's event went so well! Glad to see everyone here today!</p>
+            </div>
+
+            <div class="feed-post">
+                <img src="crochetEvent.jpg" alt="Crochet Event" class="feed-image">
+                <div class="username">
+                    <img src="Knit.jpg" alt="Crochet Circle Profile" class="circle">
+                    <p>Finance Consultants' Crochet</p>
+                </div>
+                <p>Thank you everyone who attended our crochet circles this Monday! :D</p>
+            </div>
+
+            <div class="feed-post">
+                <img src="DuckEvent.jpg" alt="Duck Event" class="feed-image">
+                <div class="username">
+                    <img src="Duck.jpg" alt="Duck Circle Profile" class="circle">
+                    <p>Software Engineers Ducks Circle</p>
+                </div>
+                <p>Congrats to @Michael for his winning duck submission this week! 🦆</p>
+            </div>
+
+            <div class="feed-post">
+                <img src="StewiePaintingEvent.jpg" alt="Stewie Painting Event" class="feed-image">
+                <div class="username">
+                    <img src="paintingCircle.jpg" alt="Painting Circle Profile" class="circle">
+                    <p>Software Engineers Painting Circle</p>
+                </div>
+                <p>Great job @Michael for his Stewie painting this week!</p>
+            </div>
+
+            <div class="feed-post">
+                <img src="KermitTennisCollabEvent.png" alt="Kermit Tennis Event" class="feed-image">
+                <div class="username">
+                    <img src="KermitComp.jpg" alt="Tennis Circle Profile" class="circle">
+                    <p>Software Engineers Tennis Circle</p>
+                </div>
+                <p>Today was our annual collaboration with the Kermit cult! Once again @Michael takes the trophy for the fifth year in a row!!</p>
+            </div>
+        </div>
+        
+        <!-- Right Column: Circles -->
+        <div class="right-column column">
+            <div class="heading">Circles</div>
+            <div class="circle" style="background-image: url('Swim.jpg');"></div>
+            <div class="circle" style="background-image: url('Code.jpg');"></div>
+            <div class="circle" style="background-image: url('Knit.jpg');"></div>
+            <div class="circle" style="background-image: url('Horse.jpg');"></div>
+            <div class="circle" style="background-image: url('Kermit.jpg');"></div>
+            <div class="circle" style="background-image: url('Duck.jpg');"></div>
+        </div>
+    </div>
+</body>
+</html>

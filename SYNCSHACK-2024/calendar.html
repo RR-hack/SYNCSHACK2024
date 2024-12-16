@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Craft</title>
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("Raleway/static/Raleway-Light.ttf") format("truetype")
+        }
+        body {
+            font-family: "Raleway", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin-top: 20px;
+        }
+        .heading {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
+        }
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .event-item {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .event-item h3 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .event-item p {
+            margin: 0;
+            color: #555555;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 18px;
+        }
+        .header .logo {
+            height: 80px; /* Adjust the height of the logo */
+        }
+        .header .auth-buttons a {
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .header .auth-buttons .login {
+            background-color: transparent;
+            color: #6a0dad; /* Changed to purple */
+            border: 1px solid #6a0dad; /* Changed to purple */
+        }
+        .header .auth-buttons .signup {
+            background-color: #6a0dad; /* Changed to purple */
+            color: #ffffff;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Calendar Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        iframe {
+            border: 0;
+            width: 80%;
+            height: 80vh;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Craft Logo" class="logo"> <!-- Changed to the provided logo -->
+        <nav>
+            <a href="craft.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="circles.html">Circles</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <iframe src="https://calendar.google.com/calendar/embed?src=730tnqurmq79habr1m6qr1qsmmk1d86o%40import.calendar.google.com&ctz=Australia%2FSydney" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Craft</title>
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("Raleway/static/Raleway-Light.ttf") format("truetype")
+        }
+        body {
+            font-family: "Raleway", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin-top: 20px;
+        }
+        .heading {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
+        }
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .event-item {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .event-item:hover {
+            background-color: lightgray;
+        }
+        .event-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .event-details {
+            flex: 1;
+        }
+        .event-item h3 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .event-item p {
+            margin: 5px 0;
+            color: #555555;
+        }
+        .event-item .date, .event-item .location, .event-item .club {
+            font-size: 16px;
+            color: #6a0dad;
+            font-weight: bold;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 18px;
+        }
+        .header .logo {
+            height: 80px; /* Set the logo height to 80px */
+        }
+        .header .auth-buttons a {
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .header .auth-buttons .login {
+            background-color: transparent;
+            color: #6a0dad;
+            border: 1px solid #6a0dad;
+        }
+        .header .auth-buttons .signup {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Craft Logo" class="logo">
+        <nav>
+            <a href="craft.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="circles.html">Circles</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="heading">Upcoming Events</div>
+        <div class="event-list">
+            <div class="event-item">
+                <img src="beach-cleanup.jpg" alt="Beach Cleanup">
+                <div class="event-details">
+                    <h3>Beach Cleanup</h3>
+                    <p class="date">Date: September 7, 2024</p>
+                    <p class="location">Location: Maroubra Beach, New South Wales</p>
+                    <p class="club">Hosted by: Environmental Club</p>
+                    <p>Join us for a day of giving back to the community by cleaning up Maroubra Beach. All necessary equipment will be provided.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="coding-workshop.jpg" alt="Coding Workshop">
+                <div class="event-details">
+                    <h3>Coding Workshop</h3>
+                    <p class="date">Date: September 14, 2024</p>
+                    <p class="location">Location: Bondi Junction, New South Wales</p>
+                    <p class="club">Hosted by: Tech Innovators Club</p>
+                    <p>Learn the basics of coding in this hands-on workshop. No prior experience needed. Perfect for beginners looking to dive into programming.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="yoga-retreat.jpg" alt="Yoga Retreat">
+                <div class="event-details">
+                    <h3>Yoga Retreat</h3>
+                    <p class="date">Date: September 21, 2024</p>
+                    <p class="location">Location: Blue Mountains, New South Wales</p>
+                    <p class="club">Hosted by: Wellness Warriors Club</p>
+                    <p>Escape the city and relax in nature with our weekend yoga retreat. Suitable for all levels, this retreat focuses on mindfulness and relaxation.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="startup-pitch.jpg" alt="Startup Pitch Night">
+                <div class="event-details">
+                    <h3>Startup Pitch Night</h3>
+                    <p class="date">Date: September 28, 2024</p>
+                    <p class="location">Location: Sydney CBD, New South Wales</p>
+                    <p class="club">Hosted by: Entrepreneurial Minds Club</p>
+                    <p>Come see the latest in startup innovation as budding entrepreneurs pitch their ideas to a panel of judges. Networking opportunities available.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="charity-run.jpg" alt="Charity Fun Run">
+                <div class="event-details">
+                    <h3>Charity Fun Run</h3>
+                    <p class="date">Date: October 5, 2024</p>
+                    <p class="location">Location: Centennial Park, New South Wales</p>
+                    <p class="club">Hosted by: Active Hearts Club</p>
+                    <p>Get active and raise money for a good cause by joining our charity fun run. Open to participants of all ages and fitness levels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

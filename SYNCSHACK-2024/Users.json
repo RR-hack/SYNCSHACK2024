@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "username": "ethan",
+      "password": "234567",
+      "hobbies": [
+        "Rock Climbing",
+        "Books",
+        "Knitting"
+      ],
+      "industries": [
+        "Computer Science"
+      ]
+    },
+    {
+      "username": "robin",
+      "password": "ertyuio",
+      "hobbies": [
+        "Basketball",
+        "Knitting"
+      ],
+      "industries": [
+        "Mechanical",
+        "Business Analytics"
+      ]
+    },
+    {
+      "username": "56789",
+      "password": "fghjkl",
+      "hobbies": [
+        "Basketball"
+      ],
+      "industries": [
+        "Nursing"
+      ]
+    },
+    {
+      "username": "5678",
+      "password": "dfghjk",
+      "hobbies": [
+        "Rock Climbing"
+      ],
+      "industries": [
+        "Medicine"
+      ]
+    },
+    {
+      "username": "ratwada",
+      "password": "ajfjka",
+      "hobbies": [
+        "Football"
+      ],
+      "industries": [
+        "Medicine"
+      ]
+    },
+    {
+      "username": "waesrdtfy",
+      "password": "SADFGFHG",
+      "hobbies": [
+        "Football",
+        "Movies"
+      ],
+      "industries": [
+        "Nursing"
+      ]
+    },
+    {
+      "username": "dfghj",
+      "password": "fhm",
+      "hobbies": [
+        "Football"
+      ],
+      "industries": [
+        "Medicine"
+      ]
+    },
+    {
+      "username": "rawan",
+      "password": "1234567",
+      "hobbies": []
+    }
+  ]
+}

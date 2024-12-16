@@ -1,0 +1,77 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5; /* Light purple background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the heading */
+h1 {
+    color: #6a1b9a; /* Dark purple color */
+    text-align: center;
+}
+
+/* Style for the form */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px;
+}
+
+/* Style for section headers */
+h3 {
+    color: #8e24aa; /* Medium purple color */
+    margin-bottom: 10px;
+}
+
+/* Style for the labels to make checkboxes horizontal */
+label {
+    display: inline-block; /* Make the label elements inline-block */
+    margin-right: 15px; /* Space between each checkbox */
+    margin-bottom: 10px; /* Space between lines */
+    cursor: pointer;
+}
+
+/* Container for each section */
+.section {
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the content in each section */
+}
+
+/* Style for the checkboxes */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad; /* Main purple color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #8e24aa; /* Darker purple on hover */
+}
+
+/* Container for each section */
+.section {
+    margin-bottom: 20px;
+}
