@@ -1,0 +1,2 @@
+# SYNCSHACK2024
+For the SYNCS Hackathon 2024
